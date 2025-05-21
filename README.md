@@ -9,3 +9,5 @@ Aerium is also the countinuation of Advanced Optimized and Advanced Grahpics. Si
 
 Aerium will release in 2025 May.
 
+Update :         
+Aerium on Modrinth is still under review. 
