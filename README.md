@@ -4,7 +4,7 @@
 
 ---
 Aerium is a new modpack in development, to mix optimization mods and graphically mods.       
-Aerium is also the countinuation of Advanced Optimized and Advanced Grahpics. Since the modpack shutdown.
+Aerium will be discountinued in 2026. January. 13
 
 | Low End PC | Mid End PC  | High End PC |  
 |------------|-------------|-------------|
