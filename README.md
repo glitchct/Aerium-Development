@@ -1,6 +1,7 @@
 ![minecraft_title](https://github.com/user-attachments/assets/b10f5e37-7b20-471a-b74b-2ea357e376ab)
 
-[![Aerium on Modrinth](https://img.shields.io/badge/Aerium%20on%20Modrinth-1bd96a?style=for-the-badge&logo=modrinth&logoColor=white)](https://modrinth.com/project/aerium)      
+[![Static Badge](https://img.shields.io/badge/Available_on_Modrinth-white?style=for-the-badge&logo=Modrinth)](https://modrinth.com/project/aerium) [![Static Badge](https://img.shields.io/badge/Available_on_GitHub-white?style=for-the-badge&logo=GitHub&logoColor=000000)](https://github.com/glitchct/Aerium-Development)
+
 
 
 **Need an older Minecraft version only Optimized?** [Check out Advanced Optimized!](https://modrinth.com/modpack/advancedoptimized)
