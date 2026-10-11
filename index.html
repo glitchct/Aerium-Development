@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aerium – Minecraft Modpack</title>
+<meta name="description" content="Aerium is a Fabric modpack that mixes optimization mods and graphics mods. Better visuals, steady performance, built for low, mid and high-end PCs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#111; --ink:#f2f2f2; --muted:#b8b8b8;
+  --panel:rgba(18,18,18,.72); --line:#5a5a5a; --accent:#ffc53d; --accent-ink:#111;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{min-height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;min-height:100%;color:var(--ink);
+  background:#4d4d4d linear-gradient(180deg,#000 0%,#4d4d4d 100%) no-repeat;
+  font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif;
+}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.brand{font:800 1.15rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav .links{display:flex;gap:20px;font-size:.95rem}
+nav .links a{text-decoration:none;color:var(--muted)}
+nav .links a:hover{color:var(--ink);text-decoration:underline}
+.hero{padding:44px 0 28px}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p.lede{font-size:1.25rem;max-width:54ch;color:var(--muted);margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:500;text-decoration:none;border:2px solid var(--ink);background:transparent;color:var(--ink)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.ghost{border-color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+section{padding:56px 0}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:22px}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));border:2px solid var(--ink);border-radius:8px;background:var(--panel);overflow:hidden}
+.pillars + .pillars{margin-top:16px}
+.pillars article{padding:26px;border-right:2px solid var(--ink)}
+.pillars article:last-child{border-right:0}
+.pillars h3{font-size:1.5rem;margin-bottom:10px}
+.pillars p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.spec{border:2px solid var(--ink);border-radius:8px;background:var(--panel);padding:24px}
+.spec h3{margin-bottom:16px;font-size:1.4rem}
+.spec dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:10px 22px}
+.spec dt{color:var(--muted)}
+.spec dd{margin:0;font-weight:500}
+.spec ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.faq p{margin:0 0 14px}
+.faq p:last-child{margin:0}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:14px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+ol.steps li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:500}
+.cta{background:var(--ink);color:var(--bg);border-radius:8px;padding:40px 28px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta h2{margin:0;max-width:18ch}
+.cta .btn{border-color:var(--bg)}
+.older{margin:18px 0 0;color:var(--muted)}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem}
+footer .row{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:12px}
+@media (max-width:700px){
+  .pillars article{border-right:0;border-bottom:2px solid var(--ink)}
+  .pillars article:last-child{border-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#top">Aerium</a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="https://github.com/glitchct/Aerium-Development">GitHub</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1>Better graphics. Steady frames.</h1>
+    <p class="lede">Aerium mixes optimization mods with graphics mods, so your game looks great without the heavy cost. Built for low, mid and high-end PCs.</p>
+    <div class="btns">
+      <a class="btn ghost" href="https://modrinth.com/modpack/aerium">Available on Modrinth</a>
+      <a class="btn" href="https://github.com/glitchct/Aerium-Development">View source on GitHub</a>
+    </div>
+
+  </header>
+
+  <section id="features">
+    <h2>What's inside</h2>
+    <div class="pillars">
+      <article><h3>Boosted performance</h3><p>Higher and more stable FPS, even on low-end hardware.</p></article>
+      <article><h3>Great visuals</h3><p>Shaders support, improved lighting, and enhanced textures without the heavy cost.</p></article>
+      <article><h3>Smooth gameplay</h3><p>Reduced stutters, faster chunk loading, and optimized memory usage.</p></article>
+    </div>
+    <div class="pillars">
+      <article><h3>Vanilla-friendly</h3><p>Keeps the original feel of the game while improving it.</p></article>
+      <article><h3>Customizable</h3><p>Every visual and performance option can be tweaked to your liking.</p></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="two">
+      <div class="spec">
+        <h3>Compatibility</h3>
+        <dl>
+          <dt>Game</dt><dd>Minecraft: Java Edition</dd>
+          <dt>Versions</dt><dd>26.3, 26.1.2, 1.21.8–1.21.11, 1.21.4–1.21.6</dd>
+          <dt>Loader</dt><dd>Fabric</dd>
+          <dt>Runs on</dt><dd>Client-side and server-side</dd>
+          <dt>Java</dt><dd>21 or newer</dd>
+          <dt>RAM</dt><dd>4 GB minimum, 6–8 GB recommended</dd>
+          <dt>License</dt><dd>BSD-3-Clause</dd>
+        </dl>
+      </div>
+      <div class="spec" id="install">
+        <h3>Install in five steps</h3>
+        <ol class="steps">
+          <li><span>Download the latest version from <a href="https://modrinth.com/modpack/aerium">Modrinth</a>.</span></li>
+          <li><span>Open your launcher: Modrinth App, Prism Launcher, CurseForge or similar.</span></li>
+          <li><span>Import the <code>.mrpack</code> or <code>.zip</code> file as a new instance.</span></li>
+          <li><span>Allocate the recommended amount of RAM.</span></li>
+          <li><span>Launch the game and enjoy.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="two">
+      <div class="spec">
+        <h3>Performance tips</h3>
+        <ul>
+          <li>Keep render distance between 8–12 chunks for the best FPS.</li>
+          <li>Use a shader preset that matches your hardware.</li>
+          <li>Close background apps to free up RAM.</li>
+          <li>Update your graphics drivers regularly.</li>
+        </ul>
+      </div>
+      <div class="spec faq">
+        <h3>Questions</h3>
+        <p><strong>Can I add more mods?</strong><br>Yes, but extra mods may affect performance or stability.</p>
+        <p><strong>Does Aerium work on low-end PCs?</strong><br>Yes, it was built for and with low-end systems.</p>
+        <p><strong>Does it work in multiplayer?</strong><br>Yes, as long as the server allows the included client-side mods.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>Ready for a better-looking world?</h2>
+      <a class="btn primary" href="https://modrinth.com/modpack/aerium/versions">Browse all versions</a>
+    </div>
+    <p class="older">Want an older Minecraft version, optimized only? Try <a href="https://modrinth.com/modpack/advancedoptimized">Advanced Optimized</a>.</p>
+  </section>
+
+  <footer>
+    <div class="row">
+      <a href="https://modrinth.com/modpack/aerium">Modrinth</a>
+      <a href="https://github.com/glitchct/Aerium-Development">GitHub</a>
+      <a href="https://github.com/glitchct/Aerium-Development/issues">Report an issue</a>
+      <a href="https://modrinth.com/modpack/aerium/changelog">Changelog</a>
+    </div>
+    Not an official Minecraft service. Not approved by or associated with Mojang or Microsoft. All rights reserved. GLITCHCT, 2026
+  </footer>
+</div>
+
+</body>
+</html>
