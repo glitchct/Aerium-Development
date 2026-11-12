@@ -8,6 +8,22 @@
 
 # Aerium
 
+> [!IMPORTANT]
+> Aerium might be discontinued soon and migrated into Advanced Optimized.
+
+> [!NOTE]
+> Message from GLITCHCT:                                                      
+> Hello People, my name is GLITCHCT. I am the founder, Maintainer and updater of Aerium, Advanced Optimized and SurvivalistZ.                                                            
+> I can't keep up with monthly updates, since I have to focus more on my personal life.                  
+> It has become much harder for me to upload things, since I don't have the time I had.                      
+> Aerium and Advanced Optimized is monthly updated, which has been a lot of work and time for me.                         
+> Plus, I am currently trying to get SurvivalistZ unto Modrinth, which also takes a lot of time.                
+> I have come to my decision, that Aerium is going to be migrated into Advanced Optimized.                  
+> This is a hard decision, since both projects aren't the same, but Aerium was built on Advanced Optimized.               
+> I made two projects, both got me a lot of attention, views and downloads, and i am proud of that. But I can't keep up.                         
+> I am sorry, but this is the only choice, I can make right now. Farewell.                                          
+
+
 Aerium is a modpack designed to optimize your gameplay, but keeping good graphics.
 
 ## Features
